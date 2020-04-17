@@ -1,0 +1,27 @@
+{% set title = "연락처 등록" %}
+{% extends "layout/base.html" %}
+ 
+{% block content -%}
+    <form action="" method="post">
+        <table class="table table-bordered">
+            <tr>
+                <th>연락처 이름</th>
+                <td><input type="text" name="name" class="form-control" value="{{ contact.name }}"/></td>
+            </tr>
+            <tr>
+                <th>이메일</th>
+                <td><input type="text" name="email" class="form-control" value="{{ contact.email }}"/></td>
+            </tr>
+            <tr>
+                <th>전화번호</th>
+                <td><input type="text" name="phone" class="form-control" value="{{ contact.phone }}"/></td>
+            </tr>
+            <tr>
+                <th>설명</th>
+                <td><input type="text" name="description" class="form-control" value="{{ contact.description }}"/></td>
+            </tr>
+        </table>
+        <button class="btn btn-primary">작성하기</button>
+    </form>
+
+{% endblock %}

@@ -1,0 +1,32 @@
+{
+  "name": "node_shoppingmall",
+  "version": "1.0.0",
+  "description": "쇼핑몰",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx nodemon -e js,html server.js",
+    "dev": "npx nodemon server.js"
+  },
+  "author": "s00hyun",
+  "license": "ISC",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "connect-session-sequelize": "^6.0.0",
+    "cookie-parser": "^1.4.4",
+    "csurf": "^1.10.0",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "express-paginate": "^1.0.0",
+    "express-session": "^1.16.2",
+    "moment": "^2.24.0",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "mysql2": "^1.6.5",
+    "nunjucks": "^3.2.0",
+    "passport": "^0.4.0",
+    "passport-facebook": "^3.0.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^4.42.0",
+    "socket.io": "^2.2.0"
+  }
+}
